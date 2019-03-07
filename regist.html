@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册页</title>
+    <link href="./css/regist.css" rel="stylesheet">
+</head>
+<body>
+        <header class="header">
+                <div class="header_wrap">
+                    <div class="logo">
+                        <a href="index.html"><img src="./img/image1/logonew.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <li class="on"><a href="index.html">首页</a></li>
+                        <li><a href="play/index.html">酷玩</a></li>
+                        <li><a href="guid/index.html">导购</a></li>
+                        <li><a href="use/index.html">试用</a></li>
+                        <li><a href="report/index.html">报告</a></li>
+                    </ul>
+                    <a href="regist.html" class="regist">注册</a>
+                    <a href="" class="search"></a>
+                </div>
+            </header>
+    <div class="secn_inp">       
+    <form onsubmit="return check()" id="forms">
+          <div class="secn_h3"><h3>注册极果</h3></div>
+            <div class="sec_div">
+                    <div class="commontxt">
+                        <input type="text" placeholder="请输入登陆手机号" pattern="^1(3|4|5|7|8)\d{9}$" required="required">
+                    </div>
+                    <div class="c_jym">
+                        <div class="commontxt txt_Code">
+                            <input type="text" placeholder="请输入图片校验码" required="required">
+                        </div>
+                        <div class="img_Code">
+                                <div class="code">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                               </div> 
+                        </div>
+                    </div>
+                    <div class="c_jym">
+                        <div class="commontxt txt_Code">
+                           <input type="text" placeholder="请输入4位数字验证码" pattern="\d{4}"  required="required">
+                        </div>
+                        <div class="img_Code">
+                           <a id="getYzm" onclick="settime(this)">获取验证码</a>
+                        </div>
+                    </div>
+                    <div class="commontxt c_top">
+                        <input type="text" placeholder="请输入用户名" required="required">
+                    </div>
+                    <div class="commontxt c_top">
+                        <input type="password" id="password" placeholder="请输入新密码" required="required">
+                    </div>
+                    <div class="commontxt c_top">
+                        <input type="password" id="confirm_password" placeholder="确定新密码" required="required">
+                    </div>
+                    <div class="zhuce">
+                        <input type="submit" value="立即注册">
+                    </div>
+                </div>
+    </form>
+</div> 
+<footer class="foot_box">
+        <div class="foot">
+            <dl>
+                <img src="./img/image1/code.png" alt="">
+            </dl>
+            <dl>
+                <dt><img src="./img/image1/logoImg.jpg"/></dt>
+                <dd>全球酷玩试用导购平台<br>酷·新奇·好玩·品质</dd>
+                <dd>微信添加“JguoJguo” <br>获取我们的服务。</dd>
+            </dl>
+            <dl>
+                <dt>免费试用</dt>
+                <dd><a href="help.html#lc">试用流程</a></dd>
+                <dd><a href="help.html#cg">如何提高成功率</a></dd>
+            </dl>
+            <dl>
+                <dt>友情链接</dt>
+                <dd><a href="#">智东西</a><a href="#">WEIBUSI</a></dd>
+                <dd><a href="#">搜狐IT</a><a href="#">腾讯科技</a></dd>
+                <dd><a href="#">搜狐数码</a><a href="#">凤凰科技</a></dd>
+                <dd><a href="#">凤凰数码</a><a href="#">PConline</a></dd>
+                <dd><a href="#">泡泡网</a><a href="#">3W咖啡</a></dd>
+                <dd><a href="#">ZUK社区</a><a href="#">亿觅emie</a></dd>
+                <dd><a href="#">极客公园</a><a href="#">易迅易启玩</a></dd>
+                <dd><a href="#">果库</a></dd>
+            </dl>
+            <dl>
+                <dt>购买攻略</dt>
+                <dd><a href="#">美亚海淘教程</a></dd>
+                <dd><a href="#">日亚海淘教程</a></dd>
+                <dd><a href="#">海淘转运攻略</a></dd>
+                <dd><a href="#">kickstarter 众筹购买攻略</a></dd>
+                <dd><a href="#">indiegogo 众筹购买攻略</a></dd>
+            </dl>
+            <dl>
+                <dt>厂商合作</dt>
+                <dd><a href="about.html">关于极果</a></dd>
+                <dd><a href="about.html#connect">联系我们</a></dd>
+                <dd><a href="mailto:BD@jiguo.com">商务合作：BD@jiguo.com</a></dd>
+                <dd><a href="mailto:CEO@jiguo.com">CEO邮箱：CEO@jiguo.com</a></dd>
+            </dl>
+            <p class="copy">© 2016 极果版权所有</p>
+        </div>
+
+    </footer>
+
+    <script src="./bootstrap-3.3.7-dist/jquery-3.3.1.min.js"></script>
+    <script src="./js/regist.js"></script>
+</body>
+</html>

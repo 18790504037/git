@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.life{
+    margin-bottom:35px ;
+    border: 1px solid #ebecec;
+    background-color: #fff;
+    border-radius: 6px;
+
+}
+.life dt{
+    margin-top: 20px;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 25px;
+    border-left: 6px solid #f55643;
+}
+.life dd{
+    padding: 0 13px 20px;
+    overflow: hidden;
+}
+.life dd .list{
+    float: left;
+    width: 150px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 35px;
+}
+.life dd .list a{
+    color: #a3a3a3;
+}
+.life dd .list a:hover{
+    color: #ff3c3c;
+
+}
+.life dd .list img:hover{
+    animation:rotateIn 1s ease-in infinite;
+}
+@-webkit-keyframes rotateIn{
+    0%{
+        transform: rotate(360deg) scale(1.5);
+    }
+    100%{
+        transform: rotate(0deg) scale(1);
+    }
+}
+.life dd .list .info{
+    padding-top: 12px;
+}
+.life dd:nth-child(3){
+    border-top: 1px dashed #e0e0e0;
+    padding-bottom: 35px;
+}
+.life dd:last-child .list {
+    margin-top: 0;
+}

@@ -1,0 +1,260 @@
+*{
+    margin:0;
+    padding:0;
+}
+@-webkit-keyframes fade{
+    0%,100%{
+        opacity:1;
+    }
+    50%{
+        opacity:0.6;
+    }
+}
+@-webkit-keyframes rotateIn{
+    0%{
+        transform:translate(800px,-800px);
+    }
+    100%{
+        transform:translate(0);
+    }
+}
+.search{
+    background: url("../img/image/search.png") no-repeat;
+    width: 42px;
+    height: 40px;
+    margin-top: 28px;
+    margin-right: 15px;
+    float: right;
+}
+.search:hover{
+    transform: scale(1.1);
+}
+.header{
+    height: 76px;
+    border-bottom: 1px solid #cecfcf;
+    box-shadow: 0 0 5px #cecfcf inset;
+}
+.header_wrap{
+    width: 1000px;
+    height: 100%;
+    min-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.logo{
+    margin-top: 13px;
+    float: left;
+}
+.logo img{
+    width: 132px;
+    height: 52px;
+}
+.logo:hover img{
+    animation:fade 1s ease-in infinite;
+}
+
+.header_wrap ul{
+    float: left;
+    padding: 28px 0 0 40px;
+    list-style: none;
+}
+.header_wrap ul li{
+    float: left;
+    padding: 0 25px;
+    font-size: 20px;
+}
+.header_wrap ul a{
+    color: #0f0f0f;
+
+}
+a{
+    text-decoration: none;
+}
+.header_wrap ul a:hover{
+    color: #ff3c3c;
+}
+.header_wrap .on a{color:#fe5341;}
+.regist{
+    float: right;
+    margin-top: 23px;
+    font-size: 16px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #fe5314;
+    border-radius: 3px;
+    color: #fe5314;
+}
+.regist:hover{
+    transition: all 0.2s linear;
+    background-color: #fe5314;
+    color: #fff;
+
+}
+.head_title{
+    width:100%;
+    background:#f7f7f7;
+}
+.head_ti{
+    width:1000px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.head_title_p{
+    height:50px;
+    line-height:50px;
+}
+.head_title_p p{
+    color:#aaa9af;
+}
+.head_top_left{
+    background:#fefefe;
+    float:left;
+    width:705px;
+}
+.head_title_h3{
+    height:130px;
+    border-bottom:1px solid #e0e0e0;
+}
+.head_title_h3 h3{
+    color:#2b3b31;
+    margin-left: 26px;
+}
+.head_title_h3 p:nth-child(2){
+    float:left;
+    margin-top: 30px;
+}
+.head_title_h3 p:nth-child(3){
+    float:right;
+    margin-top: 30px;
+    color:#bcbab6;
+}
+.head_title_h3 p span{
+    margin-left: 10px;
+    color:#bcbab6;
+}
+.head_pimg p{
+    width:620px;
+    margin:25px 0 0 25px;
+    color:#123738;
+}
+.head_top h5{
+    text-align:center;
+    color:#3c322c;
+    font-weight:bold;
+    font-size: 14px;
+}
+.head_top p{
+    color:#262d16;
+    line-height:25px;
+    width: 650px;
+}
+.head1 p{
+    margin: 20px 0 20px 0;
+}
+.head_foot_fot{
+    margin-top: 63px;
+}
+.head_foot_fot p{
+    color:#9e9e9e;
+}
+/* .head_right_top{
+    width:200px;
+    height:110px;
+    border-radius: 5px 5px 5px 5px;
+    border:1px solid #eeeeee;
+    background:#ffffff;
+} */
+.head_right_top{
+    border:1px solid red;
+    float:left;
+    border-radius: 5px 5px 5px 5px;
+    width:270px;
+    background:#ffffff;
+    border:1px solid #eeeeee;
+    overflow: hidden;
+    text-align: center;
+    margin-left: 20px;
+}
+.head_right_p{
+    float:left;
+    width:130px;
+    border-right: 1px solid #ebebeb;
+    margin-top: 7px;
+}
+.head_right_p1{
+    float: right;
+    /* width: 130px; */
+    /* margin-top:7px; */
+    margin-right: 60px;
+    margin-top: 5px;
+}
+.head_right_p1 span{
+    margin-left:19px;
+}
+/* 底部 */
+
+.foot_box{
+    width: 100%;
+
+    background: #505050;
+    color: #a3a3a3;
+    padding: 40px 0 15px;
+}
+.foot{
+    width: 1000px;
+    min-width: 1000px;
+    text-align: left;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.foot dl{
+    float: left;
+    font-size: 13px;
+    line-height: 20px;
+}
+.foot dl:nth-child(1) img{
+    width: 160px;
+    height: 160px;
+}
+.foot dl dt{
+    color: #fff;
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+.foot dl:nth-child(2){
+    width: 140px;
+    padding-left: 22px;
+}
+.foot dl:nth-child(2) dd:last-child {
+    margin-top: 13px;
+}
+.foot dl:nth-child(3){
+    width: 100px;
+    padding-left: 22px;
+}
+.foot a{
+    color: #a3a3a3;
+}
+.foot dl:nth-child(4){
+    width: 140px;
+    padding-left: 22px;
+}
+.foot dl:nth-child(4) dd a {
+    display: inline-block;
+    width: 69px;
+}
+.foot dl:nth-child(5){
+     width: 148px;
+     padding-left: 22px;
+}
+.foot dl:nth-child(6){
+    width: 180px;
+    padding-left: 22px;
+}
+.foot .copy{
+    text-align: center;
+    padding-top: 290px;
+    font-size: 13px;
+}
